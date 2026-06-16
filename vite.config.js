@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/[Responsive-Design---Audi-x-Schachbrett]/",
+  base: "/Responsive-Design---Audi-x-Schachbrett/",
   plugins: [react(), tailwindcss()],
 })
