@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import Disclaimer from './Disclaimer';
 
 function NavBar() {
@@ -9,13 +9,16 @@ function NavBar() {
   const [isDisclaimerOpen, setIsDisclaimerOpen] = useState(false);
   const [targetUrl, setTargetUrl] = useState('https://www.audi.de');
 
-  const handleNavClick = (e, link, name) => {
+const handleNavClick = (e, link, name) => {
     const exceptions = ["Schachbrett", "Ikonen", "Premium", "Innovation"];
     
     if (exceptions.includes(name)) {
       e.preventDefault();
-      navigate(`/${name.toLowerCase()}`);
+      // Wenn es "Schachbrett" ist, steuere die Startseite an, andernfalls die Unterseite
+      const targetPath = name === "Schachbrett" ? "/" : `/${name.toLowerCase()}`;
+      navigate(targetPath);
       setActiveSubmenu(null);
+      setIsOpen(false); // Schließt auch das mobile Menü bei Klick
       return;
     }
 
