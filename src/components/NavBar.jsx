@@ -70,7 +70,7 @@ const handleNavClick = (e, link, name) => {
     <nav className="font-audi bg-black text-gray-400 py-2 px-6 lg:px-22 flex items-center justify-between relative w-full z-40 border-b border-gray-900">
       <div className="flex items-center space-x-8">
         <div className="w-16 lg:w-18">
-          <a href="/"><img src={`${import.meta.env.BASE_URL}/icons/Audi_Rings_wh-RGB 1.svg`} alt="Audi Logo" /></a>
+          <Link to="/"><img src={`${import.meta.env.BASE_URL}icons/Audi_Rings_wh-RGB 1.svg`} alt="Audi Logo" /></Link>
         </div>
         
         <div className="hidden lg:flex space-x-6 text-sm font-medium">
@@ -80,13 +80,13 @@ const handleNavClick = (e, link, name) => {
               className="relative"
               onMouseEnter={() => item.submenu ? setActiveSubmenu(item.name) : setActiveSubmenu(null)}
             >
-              <a 
-                href={item.link} 
+              <Link
+                to={item.link} 
                 onClick={(e) => handleNavClick(e, item.link, item.name)}
                 className={`hover:text-white transition-colors cursor-pointer ${activeSubmenu === item.name ? "text-white" : ""}`}
               >
                 {item.name}
-              </a>
+              </Link>
             </div>
           ))}
         </div>
