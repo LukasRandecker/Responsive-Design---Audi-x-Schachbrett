@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const _3er1_1 = () => {
   const items = [
     { title: "Ikonen", link: "/ikonen", img: `${import.meta.env.BASE_URL}/images/IkonenLinkCard.jpg` },
@@ -19,7 +21,7 @@ const _3er1_1 = () => {
               className="w-[70vw] h-[70vw] md:w-[60vw] md:h-[60vw] lg:w-[22vw] lg:h-[22vw] bg-cover bg-center rounded-2xl flex flex-col justify-end items-center "
             >
                 <h3 className="font-audi-ext text-white text-2xl md:text-3xl font-audi mb-6">{item.title}</h3>
-                <a href={item.link} className="btn-secondary-body mb-10">Entdecken</a>
+                <Link to={item.link} className="btn-secondary-body mb-10">Entdecken</Link>
             </div>
           ))}
         </div>
