@@ -24,7 +24,9 @@ const router = createBrowserRouter([
       { path: "*", element: <ErrorPage /> },
     ],
   },
-]);
+],{
+  basename: "/Responsive-Design---Audi-x-Schachbrett", // WICHTIG: Hier am Ende KEINEN Slash!
+});
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
