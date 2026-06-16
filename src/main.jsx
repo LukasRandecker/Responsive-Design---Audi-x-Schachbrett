@@ -3,15 +3,16 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./pages/Error.jsx";
 import IkonenPage from "./pages/Ikonen.jsx";
 import InnovationPage from "./pages/Innovation.jsx";
 import LandingPage from "./pages/Landing.jsx";
 import PremiumPage from "./pages/Premium.jsx";
 
-// Router erstellen
-const router = createBrowserRouter([
+
+
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
@@ -24,9 +25,7 @@ const router = createBrowserRouter([
       { path: "*", element: <ErrorPage /> },
     ],
   },
-],{
-  basename: "/Responsive-Design---Audi-x-Schachbrett", // WICHTIG: Hier am Ende KEINEN Slash!
-});
+]); 
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
