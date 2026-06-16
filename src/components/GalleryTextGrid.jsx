@@ -16,7 +16,7 @@ const GalleryTextGrid = ({ headline, galleryItems }) => {
               ${item.isWide ? "aspect-[16/9] md:h-[60vh] md:aspect-auto" : "aspect-[3/4] md:h-[60vh] md:aspect-auto"}
             `}>
               <img 
-                src={item.img} 
+                src={`${import.meta.env.BASE_URL}${item.img}`} 
                 alt={item.title} 
                 className="w-full h-full object-cover"
               />

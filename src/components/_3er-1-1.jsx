@@ -1,8 +1,8 @@
 const _3er1_1 = () => {
   const items = [
-    { title: "Ikonen", link: "/ikonen", img: "/images/IkonenLinkCard.jpg" },
-    { title: "Innovation", link: "/innovation", img: "/images/InnovationLinkCard.jpg" },
-    { title: "Premium", link: "/premium", img: "/images/PremiumLinkCard.jpg" },
+    { title: "Ikonen", link: "/ikonen", img: `${import.meta.env.BASE_URL}/images/IkonenLinkCard.jpg` },
+    { title: "Innovation", link: "/innovation", img: `${import.meta.env.BASE_URL}/images/InnovationLinkCard.jpg` },
+    { title: "Premium", link: "/premium", img: `${import.meta.env.BASE_URL}/images/PremiumLinkCard.jpg` },
   ];
 
   return (

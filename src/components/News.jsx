@@ -48,7 +48,7 @@ const News = () => {
              
               <div className="rounded-2xl overflow-hidden mb-6 aspect-[16/9]">
                 <img 
-                  src={thema.img} 
+                  src={`${import.meta.env.BASE_URL}${thema.img}`} 
                   alt={thema.title} 
                   className="w-full h-full object-cover"
                 />

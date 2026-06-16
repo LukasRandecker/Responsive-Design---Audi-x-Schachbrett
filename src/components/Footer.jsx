@@ -95,11 +95,11 @@ function Footer() {
 
         
         <div className="flex justify-end gap-3 mb-12">
-          <button onClick={(e) => handleLinkClick(e, "https://www.audi.de")} className="btn-primary-footer !hover:bg-[#657081] !p-0"><img className="p-3" src="/icons/facebook.svg" alt="" /></button>
-          <button onClick={(e) => handleLinkClick(e, "https://www.audi.de")} className="btn-primary-footer !hover:bg-[#657081] !p-0"><img className="p-3" src="/icons/instagram-s.svg" alt="" /></button>
-          <button onClick={(e) => handleLinkClick(e, "https://www.audi.de")} className="btn-primary-footer !hover:bg-[#657081] !p-0"><img className="p-3" src="/icons/youtube-s.svg" alt="" /></button>
-          <button onClick={(e) => handleLinkClick(e, "https://www.audi.de")} className="btn-primary-footer !hover:bg-[#657081] !p-0"><img className="p-3" src="/icons/linkedin-s.svg" alt="" /></button>
-          <button onClick={(e) => handleLinkClick(e, "https://www.audi.de")} className="btn-primary-footer !hover:bg-[#657081] !p-0"><img className="p-3" src="/icons/pinterest-s.svg" alt="" /></button>
+          <button onClick={(e) => handleLinkClick(e, "https://www.audi.de")} className="btn-primary-footer !hover:bg-[#657081] !p-0"><img className="p-3" src={`${import.meta.env.BASE_URL}/icons/facebook.svg`} alt="" /></button>
+          <button onClick={(e) => handleLinkClick(e, "https://www.audi.de")} className="btn-primary-footer !hover:bg-[#657081] !p-0"><img className="p-3" src={`${import.meta.env.BASE_URL}/icons/instagram-s.svg`} alt="" /></button>
+          <button onClick={(e) => handleLinkClick(e, "https://www.audi.de")} className="btn-primary-footer !hover:bg-[#657081] !p-0"><img className="p-3" src={`${import.meta.env.BASE_URL}/icons/youtube-s.svg`} alt="" /></button>
+          <button onClick={(e) => handleLinkClick(e, "https://www.audi.de")} className="btn-primary-footer !hover:bg-[#657081] !p-0"><img className="p-3" src={`${import.meta.env.BASE_URL}/icons/linkedin-s.svg`} alt="" /></button>
+          <button onClick={(e) => handleLinkClick(e, "https://www.audi.de")} className="btn-primary-footer !hover:bg-[#657081] !p-0"><img className="p-3" src={`${import.meta.env.BASE_URL}/icons/pinterest-s.svg`} alt="" /></button>
         </div>
 
         <hr className="border-gray-800 mb-8" />

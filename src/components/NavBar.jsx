@@ -67,7 +67,7 @@ function NavBar() {
     <nav className="font-audi bg-black text-gray-400 py-2 px-6 lg:px-22 flex items-center justify-between relative w-full z-40 border-b border-gray-900">
       <div className="flex items-center space-x-8">
         <div className="w-16 lg:w-18">
-          <a href="/"><img src="/icons/Audi_Rings_wh-RGB 1.svg" alt="Audi Logo" /></a>
+          <a href="/"><img src={`${import.meta.env.BASE_URL}/icons/Audi_Rings_wh-RGB 1.svg`} alt="Audi Logo" /></a>
         </div>
         
         <div className="hidden lg:flex space-x-6 text-sm font-medium">
@@ -94,7 +94,7 @@ function NavBar() {
     onClick={(e) => handleNavClick(e, "https://www.audi.de", "Händler wählen")} 
     className="btn-primary-nav hidden sm:flex items-center text-white text-sm px-4"
   >
-    <span className="mr-2"><img src="/icons/poi.svg" alt="" /></span> Händler wählen
+    <span className="mr-2"><img src={`${import.meta.env.BASE_URL}/icons/poi.svg`} alt="" /></span> Händler wählen
   </button>
 
   <div className="hidden lg:flex items-center space-x-1">
@@ -104,7 +104,7 @@ function NavBar() {
         onClick={(e) => handleNavClick(e, "https://www.audi.de", icon)} 
         className="btn-primary-nav p-2 hover:bg-gray-800 rounded-full transition-colors"
       >
-        <img src={`/icons/${icon}.svg`} alt={icon} />
+        <img src={`${import.meta.env.BASE_URL}/icons/${icon}.svg`} alt={icon} />
       </button>
     ))}
   </div>
